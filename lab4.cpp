@@ -18,16 +18,22 @@ int main(int argc, char const *argv[]){
 	while ( (opcion = menu()) != 3){
 
 		if (opcion == 1){
-			int gradoPoli;
+			int gradoPoli,coeficiente;
+			double *f;
 			cout<<"-------------- EJERCICIO 1 --------------"<<endl;
-			//cout<<"Ingrese el grado mas alto del polinomio: "<<endl;
-			//cin>>gradoPoli;
+			cout<<"Ingrese el grado mas alto del polinomio: "<<endl;
+			cin>>gradoPoli;
+			f = new double [gradoPoli+1];
+			
+			for (int i = 0; i <=gradoPoli;i++){
+                cout<<"INGRESE EL COEFICIENTE-> "<<endl;
+                cin>coeficiente;
+            }
 
-			/*for (int i = 0; i < gradoPoli; ++i){
-				cout<<"Ingrese el polinomio x^"<<i;
-				int polinomio;
-			}*/
-
+            //RUFFINI
+   			for (i = n - 1; i > -1; i--) {
+   				f[i] = f[i] + f[i + 1] * x;
+   			}
 			
  
 		} // fin if 
