@@ -1,3 +1,4 @@
+#include <iomanip>
 #include <iostream>
 
 using namespace std;
@@ -38,7 +39,7 @@ int main(int argc, char const *argv[]){
 				cin>>numero;
     			int x = numero * 2;
     			for(int i = 0; i <= numero; ++i,x -= 2){
-        			for(int s = 0; s <= x;s++)
+        			for(int j = 0; j <= x;j++)
             			cout<<" ";
         				for(int k = 0; k <= i;++k){
             				if(formula(i,k) % 2 == 0){
@@ -87,7 +88,7 @@ int factorial(int numero){
 int formula(int numero,int posicion){
    int combinacion;
    combinacion = factorial(numero)/ (factorial(numero-posicion)* factorial(posicion) );
-   
+
    return combinacion;  
 }
 
@@ -108,7 +109,7 @@ void LlenandoMatriz (int** matriz, int numero){
 void Imprimir (int** m,int numero){
     for(int i =0; i<numero+1;i++){
             for(int j =0 ;j<numero+1;j++){
-                cout<<" ["<<m[i][j]<<"]";
+                cout<<"["<<m[i][j]<<"]";
             }
         cout<<"\n";
     }   
