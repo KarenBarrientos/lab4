@@ -23,17 +23,14 @@ int main(int argc, char const *argv[]){
 			cout<<"-------------- EJERCICIO 1 --------------"<<endl;
 			cout<<"Ingrese el grado mas alto del polinomio: "<<endl;
 			cin>>gradoPoli;
-			f = new double [gradoPoli+1];
-			
+			cout<<"NO SABIA COMO HACERLO XD Y EL 2 NO ESTA MUY BIEN"<<endl;
+			/*f= new double [gradoPoli+1];
+
 			for (int i = 0; i <=gradoPoli;i++){
                 cout<<"INGRESE EL COEFICIENTE-> "<<endl;
                 cin>coeficiente;
             }
-
-            //RUFFINI
-   			for (i = n - 1; i > -1; i--) {
-   				f[i] = f[i] + f[i + 1] * x;
-   			}
+            */
 			
  
 		} // fin if 
@@ -98,6 +95,7 @@ int formula(int numero,int posicion){
    return combinacion;  
 }
 
+/*
 void CreandoMatriz (int** m, int numero){
     for (int i =0; i<numero+1;i++){
         m[i]=new int[numero+1];
@@ -128,4 +126,5 @@ void liberar_Memoria(int** m, int numero){
     delete[] m;
 
 }
+*/
 
